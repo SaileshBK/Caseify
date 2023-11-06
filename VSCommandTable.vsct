@@ -21,8 +21,8 @@
         <Icon guid="ImageCatalogGuid" id="StatusInformation" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>My Command</ButtonText>
-          <LocCanonicalName>.Caseify.MyCommand</LocCanonicalName>
+          <ButtonText>Caseify</ButtonText>
+          <LocCanonicalName>.Edit.PascalCase</LocCanonicalName>
         </Strings>
       </Button>
     </Buttons>
