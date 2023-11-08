@@ -3,8 +3,8 @@ using System.Linq;
 
 namespace Caseify.Commands
 {
-    [Command(PackageIds.MyCommand)]
-    internal sealed class MyCommand : BaseCommand<MyCommand>
+    [Command(PackageIds.TitleCase)]
+    internal sealed class TitleCase : BaseCommand<TitleCase>
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {

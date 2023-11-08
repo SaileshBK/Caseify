@@ -6,32 +6,45 @@
   <Include href="KnownImageIds.vsct"/>
   <Include href="VSGlobals.vsct"/>
 
-  <Commands package="Caseify">
-	<Groups>
-	  <Group guid="Caseify" id="MyMenuGroup" priority="0x0600">
-		<Parent guid="VSMainMenu" id="Edit"/>
-	  </Group>
-	</Groups>
+	<Commands package="Caseify">
+		<Groups>
+			<Group guid="Caseify" id="CaseifyListGroup" priority="0x0600">
+				<Parent guid="Caseify" id="CaseifyMenu"/>
+			</Group>
+			<Group guid="Caseify" id="CaseifySettings" priority="0x0700">
+				<Parent guid="Caseify" id="CaseifyMenu"/>
+			</Group>
+		</Groups>
 
-	<!--This section defines the elements the user can interact with, like a menu command or a button
-		or combo box in a toolbar. -->
-	<Buttons>
-	  <Button guid="Caseify" id="MyCommand" priority="0x0100" type="Button">
-		<Parent guid="Caseify" id="MyMenuGroup" />
-		<Icon guid="ImageCatalogGuid" id="TransformListItem" />
-		<CommandFlag>IconIsMoniker</CommandFlag>
-		<Strings>
-		  <ButtonText>Caseify</ButtonText>
-		  <LocCanonicalName>.Edit.PascalCase</LocCanonicalName>
-		</Strings>
-	  </Button>
-	</Buttons>
-  </Commands>
+		<Menus>
+			<Menu guid="Caseify" id="CaseifyMenu" priority="0x0250" type="Menu">
+				<Parent guid="VSMainMenu" id="Tools.OptionsGroup"/>
+				<Strings>
+					<ButtonText>Caseify</ButtonText>
+				</Strings>
+			</Menu>
+		</Menus>
 
-  <Symbols>
-	<GuidSymbol name="Caseify" value="{29f0ebde-8a46-405f-8293-772c186239fd}">
-	  <IDSymbol name="MyMenuGroup" value="0x0001" />
-	  <IDSymbol name="MyCommand" value="0x0100" />
-	</GuidSymbol>
-  </Symbols>
+		<!--This section defines the elements the user can interact with, like a menu command or a button or combo box in a toolbar. -->
+		<Buttons>
+			<Button guid="Caseify" id="TitleCase" priority="0x0100" type="Button">
+				<Parent guid="Caseify" id="CaseifySettings" />
+				<Icon guid="ImageCatalogGuid" id="FilterAlphabetically"/>
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>TitleCase</ButtonText>
+					<LocCanonicalName>.Caseify.TitleCase</LocCanonicalName>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="Caseify" value="{29f0ebde-8a46-405f-8293-772c186239fd}">
+			<IDSymbol name="CaseifyMenu" value="0x0001" />
+			<IDSymbol name="CaseifyListGroup" value="0x0002" />
+			<IDSymbol name="CaseifySettings" value="0x0003" />
+			<IDSymbol name="TitleCase" value="0x0101" />
+		</GuidSymbol>
+	</Symbols>
 </CommandTable>
