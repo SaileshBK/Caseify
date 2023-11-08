@@ -20,7 +20,9 @@ namespace Caseify
     /// </summary>
     internal sealed partial class PackageIds
     {
-        public const int MyMenuGroup = 0x0001;
-        public const int MyCommand = 0x0100;
+        public const int CaseifyMenu = 0x0001;
+        public const int CaseifyListGroup = 0x0002;
+        public const int CaseifySettings = 0x0003;
+        public const int TitleCase = 0x0101;
     }
 }
