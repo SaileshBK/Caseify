@@ -24,5 +24,6 @@ namespace Caseify
         public const int CaseifyListGroup = 0x0002;
         public const int CaseifySettings = 0x0003;
         public const int TitleCase = 0x0101;
+        public const int CamelCase = 0x0102;
     }
 }
