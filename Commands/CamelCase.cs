@@ -13,8 +13,8 @@ internal sealed class CamelCase : BaseCommand<CamelCase>
 
         if (selection.HasValue)
         {
-            var text = selection.GetValueOrDefault();
-            var transformedText = CultureInfo.CurrentCulture.TextInfo.ToLower(text.GetText().ToLower());
+            var selectedText = selection.GetValueOrDefault().GetText();
+            var transformedText = CultureInfo.CurrentCulture.TextInfo.ToLower(selectedText);
             docView.TextView.TextBuffer.Replace(selection.Value, transformedText);
         }
     }
