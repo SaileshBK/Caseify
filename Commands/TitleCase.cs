@@ -13,8 +13,8 @@ namespace Caseify.Commands
 
             if (selection.HasValue)
             {
-                var text = selection.GetValueOrDefault();
-                var transformedText = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(text.GetText().ToLower());
+                var selectedText = selection.GetValueOrDefault().GetText();
+                var transformedText = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(selectedText);
                 docView.TextView.TextBuffer.Replace(selection.Value, transformedText);
             }
         }
