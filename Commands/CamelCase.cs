@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using System.Linq;
+﻿using System.Linq;
 
 namespace Caseify.Commands;
 
@@ -14,8 +13,22 @@ internal sealed class CamelCase : BaseCommand<CamelCase>
         if (selection.HasValue)
         {
             var selectedText = selection.GetValueOrDefault().GetText();
-            var transformedText = CultureInfo.CurrentCulture.TextInfo.ToLower(selectedText);
-            docView.TextView.TextBuffer.Replace(selection.Value, transformedText);
+            var camelCased = ConvertToCamelCase(selectedText);
+            docView.TextView.TextBuffer.Replace(selection.Value, camelCased);
         }
+    }
+
+    private static string ConvertToCamelCase(string selectedText)
+    {
+        var charInSelectedText = selectedText.ToCharArray();
+        if (!charInSelectedText.Any())
+        {
+            return selectedText;
+        }
+        var firstChar = charInSelectedText[0];
+        var listOfCharInSelectedText = charInSelectedText.ToList();
+        listOfCharInSelectedText.Remove(firstChar);
+        var camelCasedText = firstChar.ToString().ToLower() + string.Join("", listOfCharInSelectedText.ToArray());
+        return camelCasedText;
     }
 }
