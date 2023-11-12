@@ -33,3 +33,8 @@ Visual Studio Extension for Properly Casing Strings.
 
 Once the installation is complete, restart Visual Studio to activate Caseify.
 Now, Caseify is ready to enhance your coding experience by simplifying and automating casing modifications in your projects. Enjoy the improved consistency and readability brought to you by Caseify within your Visual Studio environment.
+
+## Contributing
+Thank you for considering contributing to Caseify! We welcome contributions from the community to help make this Visual Studio extension even more robust and user-friendly.
+
+Before you start contributing, please take a moment to read our Code of Conduct to ensure a positive and inclusive environment for everyone.
