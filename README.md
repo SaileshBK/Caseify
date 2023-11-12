@@ -14,5 +14,6 @@ Visual Studio Extension for Properly Casing Strings.
 ## Features
 
 - TitleCase : Quickly convert selected text to Title Case. [ hello --> Hello ]
+- CamelCase : Quickly convert selected text to Camel Case [ HelloWorld --> helloWorld ]
 
 ## Installation
