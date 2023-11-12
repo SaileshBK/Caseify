@@ -12,7 +12,7 @@ namespace Caseify
         public const string Description = @"Transforming or modifying the casing of code elements.";
         public const string Language = "en-US";
         public const string Version = "1.0";
-        public const string Author = "Company";
-        public const string Tags = "";
+        public const string Author = "Sailesh B K";
+        public const string Tags = "Caseify";
     }
 }
