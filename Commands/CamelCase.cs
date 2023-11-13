@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Caseify.Utility;
 
 namespace Caseify.Commands;
 
@@ -20,11 +21,7 @@ internal sealed class CamelCase : BaseCommand<CamelCase>
 
     private static string ConvertToCamelCase(string selectedText)
     {
-        var charInSelectedText = selectedText.ToCharArray();
-        if (!charInSelectedText.Any())
-        {
-            return selectedText;
-        }
+        var charInSelectedText = Transform.TextToChars(selectedText);
         var firstChar = charInSelectedText[0];
         var listOfCharInSelectedText = charInSelectedText.ToList();
         listOfCharInSelectedText.Remove(firstChar);
