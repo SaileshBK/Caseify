@@ -4,15 +4,24 @@ namespace Caseify.Utility
 {
     public static class Transform
     {
+        public delegate string TextConversionDelegate(string inputText);
         public static char[] TextToChars(string selectedText)
         {
             var charText = selectedText.ToCharArray();
-            if (!charText.Any())
-            {
-                return null;
-            }
+            return !charText.Any() ? null : charText;
+        }
 
-            return charText;
+        public static async Task TextConverterAsync(TextConversionDelegate textConversionDelegate)
+        {
+            var docView = await VS.Documents.GetActiveDocumentViewAsync().ConfigureAwait(false);
+            var selection = docView?.TextView?.Selection.SelectedSpans.FirstOrDefault();
+
+            if (selection.HasValue)
+            {
+                var selectedText = selection.GetValueOrDefault().GetText();
+                var transformedText = textConversionDelegate(selectedText);
+                docView.TextView.TextBuffer.Replace(selection.Value, transformedText);
+            }
         }
     }
 }

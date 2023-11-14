@@ -27,19 +27,29 @@
 
 		<!--This section defines the elements the user can interact with, like a menu command or a button or combo box in a toolbar. -->
 		<Buttons>
-		     <Button guid="Caseify" id="CamelCase" priority="0x0102" type="Button">
-        	    <Parent guid="Caseify" id="CaseifySettings" />
-        		<Icon guid="ImageCatalogGuid" id="FilterAlphabetically"/>
-        		<CommandFlag>IconIsMoniker</CommandFlag>
-        		<Strings>
-        			<ButtonText>CamelCase</ButtonText>
-        			<LocCanonicalName>.Caseify.CamelCase</LocCanonicalName>
-        		</Strings>
-        	</Button>
-        	
-			<Button guid="Caseify" id="TitleCase" priority="0x0100" type="Button">
+			<Button guid="Caseify" id="UpperCase" priority="0x0103" type="Button">
 				<Parent guid="Caseify" id="CaseifySettings" />
-				<Icon guid="ImageCatalogGuid" id="FilterAlphabetically"/>
+				<Icon guid="ImageCatalogGuid" id="Yield"/>
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>UpperCase</ButtonText>
+					<LocCanonicalName>.Caseify.UpperCase</LocCanonicalName>
+				</Strings>
+			</Button>
+			
+			 <Button guid="Caseify" id="CamelCase" priority="0x0102" type="Button">
+				<Parent guid="Caseify" id="CaseifySettings" />
+				<Icon guid="ImageCatalogGuid" id="Yield"/>
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>CamelCase</ButtonText>
+					<LocCanonicalName>.Caseify.CamelCase</LocCanonicalName>
+				</Strings>
+			</Button>
+			
+			<Button guid="Caseify" id="TitleCase" priority="0x0101" type="Button">
+				<Parent guid="Caseify" id="CaseifySettings" />
+				<Icon guid="ImageCatalogGuid" id="Triangle"/>
 				<CommandFlag>IconIsMoniker</CommandFlag>
 				<Strings>
 					<ButtonText>TitleCase</ButtonText>
@@ -56,6 +66,7 @@
 			<IDSymbol name="CaseifySettings" value="0x0003" />
 			<IDSymbol name="TitleCase" value="0x0101" />
 			<IDSymbol name="CamelCase" value="0x0102" />
+			<IDSymbol name="UpperCase" value="0x0103" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>
