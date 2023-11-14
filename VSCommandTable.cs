@@ -26,5 +26,6 @@ namespace Caseify
         public const int TitleCase = 0x0101;
         public const int CamelCase = 0x0102;
         public const int UpperCase = 0x0103;
+        public const int LowerCase = 0x0104;
     }
 }
