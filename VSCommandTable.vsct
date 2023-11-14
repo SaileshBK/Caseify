@@ -27,9 +27,19 @@
 
 		<!--This section defines the elements the user can interact with, like a menu command or a button or combo box in a toolbar. -->
 		<Buttons>
-			<Button guid="Caseify" id="UpperCase" priority="0x0103" type="Button">
+			<Button guid="Caseify" id="LowerCase" priority="0x0104" type="Button">
 				<Parent guid="Caseify" id="CaseifySettings" />
 				<Icon guid="ImageCatalogGuid" id="Yield"/>
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>LowerCase</ButtonText>
+					<LocCanonicalName>.Caseify.LowerCase</LocCanonicalName>
+				</Strings>
+			</Button>
+			
+			<Button guid="Caseify" id="UpperCase" priority="0x0103" type="Button">
+				<Parent guid="Caseify" id="CaseifySettings" />
+				<Icon guid="ImageCatalogGuid" id="Triangle"/>
 				<CommandFlag>IconIsMoniker</CommandFlag>
 				<Strings>
 					<ButtonText>UpperCase</ButtonText>
@@ -67,6 +77,7 @@
 			<IDSymbol name="TitleCase" value="0x0101" />
 			<IDSymbol name="CamelCase" value="0x0102" />
 			<IDSymbol name="UpperCase" value="0x0103" />
+			<IDSymbol name="LowerCase" value="0x0104" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>
