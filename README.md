@@ -1,7 +1,6 @@
 # Caseify
 
-Visual Studio Extension for Properly Casing Strings.
-
+Caseify is a powerful Visual Studio extension designed to streamline and enhance your coding experience by offering a seamless way to transform or modify the casing of code elements. This tool empowers developers to effortlessly adjust the case of variables, functions, and other code components, promoting consistency and readability in their projects. With Caseify, coding becomes more efficient as it automates the process of casing modifications, allowing users to focus on the logic and structure of their code rather than manual formatting. Boost your productivity and maintain a clean, uniform coding style with the intuitive features of Caseify within the Visual Studio environment.
 ## Table of Contents
 
 - [Features](#features)
@@ -13,8 +12,10 @@ Visual Studio Extension for Properly Casing Strings.
 
 ## Features
 
-- TitleCase : Quickly convert selected text to Title Case. [ hello --> Hello ]
-- CamelCase : Quickly convert selected text to Camel Case [ HelloWorld --> helloWorld ]
+- TitleCase : [ hello --> Hello ]
+- CamelCase : [ HelloWorld --> helloWorld ]
+- UpperCase : [ HelloWorld --> HELLOWORLD ]
+- LowerCase : [ HelloWorld --> helloworld ]
 
 ## Installation
 1) Open Visual Studio.
@@ -33,6 +34,9 @@ Visual Studio Extension for Properly Casing Strings.
 
 Once the installation is complete, restart Visual Studio to activate Caseify.
 Now, Caseify is ready to enhance your coding experience by simplifying and automating casing modifications in your projects. Enjoy the improved consistency and readability brought to you by Caseify within your Visual Studio environment.
+
+## usage
+<img src="./Resources/Usage.png"/>
 
 ## Contributing
 Thank you for considering contributing to Caseify! We welcome contributions from the community to help make this Visual Studio extension even more robust and user-friendly.
