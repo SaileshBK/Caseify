@@ -80,4 +80,10 @@
 			<IDSymbol name="LowerCase" value="0x0104" />
 		</GuidSymbol>
 	</Symbols>
+	<KeyBindings>
+		<KeyBinding guid="Caseify" id="TitleCase" key1="T" mod1="ALT" editor="guidVSStd97" />
+		<KeyBinding guid="Caseify" id="CamelCase" key1="C" mod1="ALT" editor="guidVSStd97" />
+		<KeyBinding guid="Caseify" id="UpperCase" key1="U" mod1="ALT" editor="guidVSStd97" />
+		<KeyBinding guid="Caseify" id="LowerCase" key1="L" mod1="ALT" editor="guidVSStd97" />
+	</KeyBindings>
 </CommandTable>
