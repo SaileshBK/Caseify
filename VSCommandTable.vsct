@@ -11,7 +11,12 @@
 			<Group guid="Caseify" id="CaseifyListGroup" priority="0x0600">
 				<Parent guid="Caseify" id="CaseifyMenu"/>
 			</Group>
+			
 			<Group guid="Caseify" id="CaseifySettings" priority="0x0700">
+				<Parent guid="Caseify" id="CaseifyMenu"/>
+			</Group>
+			
+			<Group guid="Caseify" id="CaseifyHelpSettings" priority="0x0800">
 				<Parent guid="Caseify" id="CaseifyMenu"/>
 			</Group>
 		</Groups>
@@ -66,6 +71,16 @@
 					<LocCanonicalName>.Caseify.TitleCase</LocCanonicalName>
 				</Strings>
 			</Button>
+			
+			<Button guid="Caseify" id="Help" priority="0x0105" type="Button">
+				<Parent guid="Caseify" id="CaseifyHelpSettings" />
+			    <Icon guid="ImageCatalogGuid" id="F1Help"/>
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Help</ButtonText>
+					<LocCanonicalName>.Caseify.Help</LocCanonicalName>
+				</Strings>
+			</Button>
 		</Buttons>
 	</Commands>
 
@@ -74,10 +89,12 @@
 			<IDSymbol name="CaseifyMenu" value="0x0001" />
 			<IDSymbol name="CaseifyListGroup" value="0x0002" />
 			<IDSymbol name="CaseifySettings" value="0x0003" />
+			<IDSymbol name="CaseifyHelpSettings" value="0x0004" />
 			<IDSymbol name="TitleCase" value="0x0101" />
 			<IDSymbol name="CamelCase" value="0x0102" />
 			<IDSymbol name="UpperCase" value="0x0103" />
 			<IDSymbol name="LowerCase" value="0x0104" />
+			<IDSymbol name="Help" value="0x0105" />
 		</GuidSymbol>
 	</Symbols>
 	<KeyBindings>

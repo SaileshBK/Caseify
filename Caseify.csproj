@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Commands\CamelCase.cs" />
+    <Compile Include="Commands\Help.cs" />
     <Compile Include="Commands\LowerCase.cs" />
     <Compile Include="Commands\UpperCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
