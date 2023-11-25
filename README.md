@@ -3,7 +3,6 @@
 Caseify, a robust Visual Studio extension, simplifies and improves coding by seamlessly transforming code element casing. It empowers developers to effortlessly modify variable, function, and code component casing, ensuring consistency and readability. With automation, Caseify enhances coding efficiency, letting users concentrate on logic and structure rather than manual formatting, thereby boosting productivity and maintaining a uniform coding style in Visual Studio.
 <img src="./Resources/Usage.png"/>
 
-
 ## Table of Contents
 
 - [Features](#features)
