@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Caseify.49bc5385-1fef-4f68-85b8-6616b86d75d2" Version="1.3" Language="en-US" Publisher="Sailesh B K" />
+        <Identity Id="Caseify.49bc5385-1fef-4f68-85b8-6616b86d75d2" Version="1.4" Language="en-US" Publisher="Sailesh B K" />
         <DisplayName>Caseify</DisplayName>
         <Description xml:space="preserve">Transforming or modifying the casing of code elements.</Description>
         <Icon>Resources\Icon.png</Icon>
